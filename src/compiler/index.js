@@ -28,7 +28,6 @@ class SyntaxTreeWrapper {
                 let resultLexem = {};
                 walk(this.tree, (node, parent) => {
                     let lexema = dictionary[node.type];
-                    debugger
                     if (lexem[lexema.key] === undefined) {
                         lexem[lexema.key] =new Set();
                     }

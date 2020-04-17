@@ -11,6 +11,7 @@ function compile(req, res) {
             })
         })
         .catch(e => {
+            res.status(400);
             res.json(e)
         })
 }
@@ -23,6 +24,7 @@ function lexem(req, res) {
             })
         })
         .catch(e => {
+            res.status(400);
             res.json(e)
         })
 }
